@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/frontend/styles/info.css">
+    <link rel="shortcut icon" href="/assets/Icon.png" type="image/x-icon">
+    <title>Info</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="nav-navegation">
+                <div class="text-header">
+                    <h2>Francisco García</h2>
+                    <small>Student</small>
+                </div>
+    
+                <div class="nav-container">
+                    <nav>
+                        <a href="/index.html">Work</a>
+                        <a href="/frontend/aboutme.html">About me</a>
+                    </nav>
+                </div>
+
+                <div class="link">
+                    <a onclick="downloadCV()">Resume</a>
+                    <a href="https://github.com/SirFrancis2007">Repository</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="main-info">
+        <div class="container">
+            <div class="grid-container-info">
+                <div class="text-info">
+                    <h1>Hi, nice to meet you!</h1>
+                    <h5>I am a student and a passionate developer, specializing in backend and frontend development.  
+                    I am from Argentina and currently living in Buenos Aires.  
+                    I enjoy creating efficient and scalable web applications using C#, .NET, MySQL, and modern frontend technologies.  
+                    I am always eager to learn and take on new challenges.  
+
+                    Feel free to explore my projects and get in touch if you’d like to collaborate!</h5>
+
+                </div>
+                <div class="card-img">
+                    <img src="/photos/photo2.jpg" alt="">
+                </div>
+                <div class="card-github">
+                    <a href="https://github.com/SirFrancis2007"><img src="/assets/github.jpg" alt=""></a>
+                </div>
+                <div class="card-mail">
+                    <a onclick="copyEmail()"><img src="/assets/mail.png" alt=""></a>
+                </div>
+                <div class="card-cv">
+                    <a onclick="downloadCV()"><img src="/assets/cv.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <h3>Built with passion and dedication. Thank you for visiting my portfolio!</h3>
+            <h6>copyrigth 2025</h6>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
