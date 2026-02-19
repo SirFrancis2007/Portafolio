@@ -170,3 +170,68 @@ header a {
   transform: translateY(-4px);
   background: rgba(43, 43, 43, 0.2);
 }
+
+@media (max-width: 1024px) {
+  main {
+    padding: 2rem;
+  }
+
+  .aboutme {
+    gap: 2rem;
+  }
+
+  .links-list {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 1.5rem;
+  }
+
+  .links-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .aboutme {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .left,
+  .rigth {
+    width: 100%;
+  }
+
+  .left {
+    align-items: center;
+  }
+
+  .social-media {
+    justify-content: center;
+  }
+
+  .left button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 1rem;
+  }
+
+  header a {
+    font-size: 0.85rem;
+    letter-spacing: 0.15em;
+  }
+
+  .left span {
+    font-size: 0.9rem;
+  }
+}
