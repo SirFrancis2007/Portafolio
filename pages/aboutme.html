@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/aboutme.css" />
+    <link rel="shortcut icon" href="/images/Isotipo.png" type="image/x-icon" />
+    <title>Document</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <ul class="links-list">
+          <li>
+            <a href="index.html" class="logo-link">
+              <div class="logo-circle"></div>
+              <span class="logo-name">Fraga</span>
+            </a>
+          </li>
+          <li><a href="/pages/projects.html">Projects</a></li>
+          <li><a href="/index.html">Home</a></li>
+        </ul>
+      </header>
+
+      <div class="aboutme">
+        <section class="left">
+          <h4>A little about me</h4>
+          <h2>Developer, Creative, Explorer</h2>
+          <br />
+          <hr />
+          <br />
+          <span
+            >I’m Francisco Garcia, a .NET developer from Argentina focused on
+            building web and desktop app service products for users. I enjoy
+            designing and developing scalable backend systems that prioritize
+            performance, security and clean architecture. My main interest lies
+            in creating reliable services that solve real problems and deliver a
+            smooth user experience. I work with web technologies and take
+            special care in structuring software architecture to ensure
+            maintainability and growth. I’m constantly improving my skills and
+            building projects that reflect my passion for backend development
+            and service-oriented systems.
+          </span>
+          <button id="downloadCV">Download my Resume</button>
+
+          <div class="social-media">
+            <a
+              href="https://www.instagram.com/lordfraank/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <img src="../icons/instagram.png" alt="Instagram" />
+            </a>
+
+            <a
+              href="https://linkedin.com/in/lordfraank"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <img src="../icons/linkedin.png" alt="LinkedIn" />
+            </a>
+
+            <a
+              href="https://github.com/SirFrancis2007"
+              target="_blank"
+              aria-label="GitHub"
+            >
+              <img src="../icons/github.png" alt="GitHub" />
+            </a>
+          </div>
+        </section>
+
+        <section class="rigth">
+          <img />
+        </section>
+      </div>
+
+      <script>
+        document
+          .getElementById("downloadCV")
+          .addEventListener("click", function () {
+            window.open("../Files/Curriculum Vitae (1).pdf", "_blank");
+          });
+      </script>
+    </main>
+  </body>
+</html>

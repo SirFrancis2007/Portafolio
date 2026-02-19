@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  opacity: 0;
+  animation: fadeInPage 2s ease forwards;
+}
+
+@keyframes fadeInPage {
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-family: "Tektur", sans-serif;
+  letter-spacing: 0.12em;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  align-items: center;
+}
+
+.links-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 110px 110px 80px 100px;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+  letter-spacing: 0.22em;
+  transition: 1s all ease;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.logo-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f0eee9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-image: url("/images/Isotipo.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-initial {
+  color: #111;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.logo-name {
+  color: black;
+  letter-spacing: 0.22em;
+  font-size: inherit;
+}
+
+/* SECTIONS */
+.aboutme {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.left,
+.rigth {
+  width: 50%;
+  margin-left: 110px;
+  margin-right: 110px;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left span {
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+}
+
+.left button {
+  width: fit-content;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.left button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.rigth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rigth img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/*Social media links*/
+
+.social-media {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: start;
+  margin-top: 2rem;
+}
+
+.social-media a {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.social-media a img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.social-media a:hover {
+  transform: translateY(-4px);
+  background: rgba(43, 43, 43, 0.2);
+}

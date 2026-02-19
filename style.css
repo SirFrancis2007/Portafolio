@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Tektur:wght@400..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  opacity: 0;
+  animation: fadeInPage 1.8s ease forwards;
+}
+
+@keyframes fadeInPage {
+  to {
+    opacity: 1;
+  }
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: #f0eee9;
+}
+
+main::before,
+main::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+main::after {
+  background: radial-gradient(circle, #3b82f6 0%, #1e40af 60%, transparent 70%);
+  bottom: -150px;
+  right: -150px;
+}
+
+main > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+main::before,
+main::after {
+  animation: float 12s ease-in-out infinite;
+}
+
+.left {
+  width: 100%;
+  margin: 60px 60px 60px 60px;
+  border-radius: 16px;
+  padding: 50px 50px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Tektur", sans-serif;
+  letter-spacing: 0.12em;
+}
+
+header > * {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.22em;
+  transition: 1s all ease;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+}
+
+.logo-circle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f0eee9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-image: url("/images/Isotipo.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.logo-initial {
+  color: #111;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.logo-name {
+  color: black;
+
+  letter-spacing: 0.22em;
+  font-size: inherit;
+}
+
+.content {
+  line-height: 1.4;
+}
+
+header a:hover {
+  font-weight: bold;
+}
+
+strong {
+  color: #1e40af;
+}
+
+h6 {
+  color: #9a9a9a;
+}
